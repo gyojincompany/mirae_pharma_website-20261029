@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>게시글 쓰기 | 미래제약</title><link rel="stylesheet" href="board-write.css"><script src="board-write.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="home.html"><img src="logo.svg" alt="미래제약 로고"></a><button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">☰</button><nav class="nav" id="mainNav"><a href="home.html#research">연구 성과</a><a href="home.html#vision">미래 비전</a><a class="active" href="board-list.html">소식과 공지</a><a href="home.html#contact">문의하기</a></nav><a class="header-cta" href="board-list.html">목록 보기 <span>↗</span></a></header>
+<main><section class="page-hero"><div class="page-hero-inner"><p class="eyebrow dark-eyebrow">NEWSROOM</p><h1>게시글 쓰기</h1><p>새로운 소식과 정보를 작성해 주세요.</p><div class="breadcrumb"><a href="home.html">홈</a><span>/</span><a href="board-list.html">소식과 공지</a><span>/</span><b>게시글 쓰기</b></div></div></section>
+<section class="write-wrap"><div class="write-heading"><div><span class="summary-label">NEW ARTICLE</span><h2>새 글 작성</h2></div><p><span class="required">*</span> 표시는 필수 입력 항목입니다.</p></div>
+<form id="writeForm" novalidate>
+<div class="form-row"><label for="category">분류 <span class="required">*</span></label><div class="field"><select id="category" name="category" required><option value="">분류를 선택하세요</option><option>공지사항</option><option>연구 소식</option><option>보도자료</option></select><small>게시글의 성격에 맞는 분류를 선택해 주세요.</small></div></div>
+<div class="form-row"><label for="title">제목 <span class="required">*</span></label><div class="field"><input id="title" name="title" type="text" maxlength="100" placeholder="제목을 입력하세요" required><small>제목은 최대 100자까지 입력할 수 있습니다.</small></div></div>
+<div class="form-row"><label for="writer">작성자 <span class="required">*</span></label><div class="field"><input id="writer" name="writer" type="text" placeholder="작성자 이름을 입력하세요" required value="미래제약 홍보팀"></div></div>
+<div class="form-row content-row"><label for="content">내용 <span class="required">*</span></label><div class="field"><textarea id="content" name="content" rows="12" placeholder="게시글 내용을 입력하세요." required></textarea><small>읽기 쉬운 문장과 문단으로 작성해 주세요.</small></div></div>
+<div class="form-row"><label for="attachment">첨부 파일</label><div class="field"><input id="attachment" name="attachment" type="file"><small>이 화면은 예시이며 파일은 서버에 업로드되지 않습니다.</small></div></div>
+<div class="form-row privacy-row"><label>공개 설정</label><div class="field"><label class="check-label"><input type="checkbox" id="isPublic" checked> 게시글 공개</label><small>실제 서비스에서는 관리자 권한 및 공개 정책을 서버에서도 확인해야 합니다.</small></div></div>
+<div class="form-notice"><span>i</span><p>작성한 내용은 이 예제 화면에서만 확인됩니다. 실제 저장 기능을 사용하려면 서버와 데이터베이스 연결이 필요합니다.</p></div>
+<div class="form-actions"><a class="btn btn-outline" href="board-list.html">취소</a><div><button type="button" class="btn btn-outline" id="previewButton">미리보기</button><button type="submit" class="btn btn-lime">등록하기 <span>↗</span></button></div></div>
+</form><section class="preview-panel" id="previewPanel" hidden><div class="preview-head"><h3>게시글 미리보기</h3><button type="button" id="closePreview" aria-label="미리보기 닫기">×</button></div><span id="previewCategory" class="category-pill notice">공지사항</span><h4 id="previewTitle"></h4><p id="previewWriter"></p><div id="previewContent"></div></section>
+</section></main><footer><div class="footer-top"><img src="logo.svg" alt="미래제약 로고"><p>과학으로 건강한 내일을 연구합니다.</p></div><div class="footer-bottom"><span>© 2026 MIRAE PHARMA. DEMO WEBSITE.</span><span>본 사이트는 디자인 예시용 가상 홈페이지입니다.</span></div></footer>
+</body></html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 78" role="img" aria-labelledby="title desc">
+<title id="title">미래제약 로고</title><desc id="desc">네이비색과 라임색으로 만든 미래제약 심볼과 워드마크</desc>
+<rect x="2" y="8" width="62" height="62" rx="19" fill="#102744"/>
+<path d="M17 45 L29 25 L40 45 L51 25" fill="none" stroke="#C9F36A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="48" cy="52" r="5" fill="#C9F36A"/>
+<text x="78" y="39" font-family="Arial, 'Malgun Gothic', sans-serif" font-size="27" font-weight="800" fill="#102744">미래제약</text>
+<text x="79" y="59" font-family="Arial, sans-serif" font-size="10" letter-spacing="2.5" fill="#607086">MIRAE PHARMA</text>
+</svg>
